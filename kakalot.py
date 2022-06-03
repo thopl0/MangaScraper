@@ -9,7 +9,7 @@ headers = {'User-gent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWe
 
 def request(link):
     r = requests.get(link, headers=headers)
-    # print(r)
+
     res = r.text
     soup = BeautifulSoup(res, "html.parser")
     return soup
