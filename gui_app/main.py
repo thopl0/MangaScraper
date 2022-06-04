@@ -6,7 +6,7 @@ import os
 
 root = Tk()
 root.title("Kaklot Scraper")
-root.iconbitmap("assets//images//kakalot_favicon.ico")
+root.iconbitmap("kakalot_favicon.ico")
 root.configure(bg="#262626")
 root.rowconfigure(13, minsize=40)
 root.resizable(False, False)
@@ -43,7 +43,7 @@ def search_res(name):
                     toast.show_toast(
                         f"{manga_name} download Complete",
                         f"Saved to {os.getcwd()}\\{manga_name}",
-                        icon_path= "assets//images//kakalot_favicon.ico",
+                        icon_path= "kakalot_favicon.ico",
                         duration = 5,
                         threaded = True,)
 
